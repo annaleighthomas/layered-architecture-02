@@ -85,7 +85,10 @@ describe('demo routes', () => {
       .delete(`/api/v1/users/${user.id}`);
 
 
-    expect(res.body).toEqual({ status: 'success', message: 'delete success' });
+    expect(res.body).toEqual({ 
+      status: 'success', 
+      message: 'delete success' 
+    });
   });
 
 });
